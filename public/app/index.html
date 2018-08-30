@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="misapplication-tap-highlight" content="no" />
+
+    <title>New Application</title>
+
+    <style type="text/css">
+      body { margin:0; overflow:hidden; height:100%; }
+      #ngAppLoading { position:absolute;left:0;top:0;width:100%;height:100%;z-index:100000;background-color: #FFFFFF; }
+      .ngAppLoaded { visibility:hidden;opacity:0;filter:alpha(opacity=0);-webkit-transition:visibility 0s linear 1s,opacity 1s linear;-moz-transition:visibility 0s linear 1s,opacity 1s linear;-ms-transition:visibility 0s linear 1s,opacity 1s linear;-o-transition:visibility 0s linear 1s,opacity 1s linear;transition:visibility 0s linear 1s,opacity 1s linear; }
+      #ngLoadBar { position:absolute;left:50%;top:50%;width:200px;margin-left:-100px;margin-top:100px; }
+      #ngLoadProgress { position:absolute;width:0;height:1px;font-size:1px;line-height:1px;border-top: 1px solid #c0c0c0;-webkit-transition:width 1s linear;-moz-transition:width 1s linear;-ms-transition:width 1s linear;-o-transition:width 1s linear;transition:width 1s linear; }
+      #ngLoadInfo { position:absolute;left:0;top:50%;width:100%;font-family:Arial CE,Helvetica CE,Arial,Helvetica,sans-serif;font-size:12px;margin-top:30px;text-align:center; color: #c0c0c0; }
+      #ngLoadName { padding-bottom:5px;font-weight:bold; }
+      #ngLoadCopy { font-size:10px; }
+      #ngLoadImg { position:absolute;left:50%;top:50%; }
+    </style>
+
+    <script type="text/javascript">
+      Evana = {};
+
+      var ngLibsURL='controls/libs/';
+
+      var ngAppFiles = [
+        // Controls.js files:
+        'controls/controls.js', // or 'controls/controls-vm.js' if using ViewModels
+
+        // Use WinEight Skin:
+        'controls/libs/ng_wineight/wineight.css',
+        'controls/libs/ng_wineight/wineight.js',
+
+        // or WinXP Skin:
+        //'controls/libs/ng_winxp/winxp.css',
+        //'controls/libs/ng_winxp/winxp.js',
+
+        // or Wireframe Skin:
+        //'controls/libs/ng_wireframe/wireframe.css',
+        //'controls/libs/ng_wireframe/wireframe.js',
+
+
+        // Your project files:
+        'papaparse.min.js',
+        'chance.js',
+        'markovchain.js',
+        'Utility.js',
+        'UI.js',
+        'bot.js',
+        'chat.js',
+        'main.js',
+
+        'style.css'
+      ];
+
+/*
+      // Multi-device configuration and device-dependent files:
+      var ngDevices = {
+        'desktop':         {},
+        'mobile':          {'IsMobile':true,'MaxWidth':600}
+      };
+
+      var ngAppDeviceFiles = {
+        'desktop': [
+        ],
+        'mobile': [
+        ]
+      };
+*/
+/*
+      function ngStartParams()
+      {
+        // Start parameters
+        this.Lang = 'en';
+        this.Version = '1.0';
+      }
+*/
+    </script>
+
+    <script type="text/javascript" src="controls/loader-bar.js"></script>
+
+  </head>
+  <body scroll="no" onload="ngLoadApplication('ngApp')">
+
+    <div id="ngAppLoading" class="ngAppLoading">
+      <div id="ngLoadInfo"><div id="ngLoadName">New Application</div><div id="ngLoadCopy">Copyright &copy; 2014<br />All rights reserved.</div></div>
+      <img id="ngLoadImg" src="controls/libs/ng_controls/images/hourglass.gif" alt="..." style="margin-left:-16px;margin-top:-16px;" />
+      <div id="ngLoadBar"><div id="ngLoadProgress"></div></div>
+    </div>
+
+    <div id="ngApp" class="ngApplication"></div>
+  </body>
+</html>

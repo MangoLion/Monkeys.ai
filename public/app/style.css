@@ -1,0 +1,33 @@
+.weButtonDark {
+    background-color: darkorange;
+}
+
+.weListBoxDark {
+    border-color: darkorange;
+}
+
+.weGroupBoxDark{
+    border-color: darkorange;
+}
+
+.weWindowLight, .weWindowDark {
+    background-color: darkorange;
+}
+
+.weEditDark {
+    outline-style: solid;
+    outline-color: #ffd194;
+}
+
+.weMemoDark {
+    outline-style: solid;
+    outline-color: #ffd194;
+}
+
+.weMemoDark {
+    background-color: darkslategrey;
+}
+
+.weMemoDarkInput_Focus {
+    background-color: darkslategrey;
+}
